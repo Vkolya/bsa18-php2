@@ -8,10 +8,11 @@ function fight(fighter, improvedFighter, ...point) {
         }	
     }
 	
-    if (fighter.health > 0 && improvedFighter.health > 0){
-	for (i = 0; i < point.length; i++){
-            battle(fighter, improvedFighter, i);
-	}
+    
+    for (i = 0; i < point.length; i++){
+	    if (fighter.health > 0 && improvedFighter.health > 0){
+            	battle(fighter, improvedFighter, i);
+	    }
     }
     
 
